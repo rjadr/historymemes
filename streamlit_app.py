@@ -14,8 +14,6 @@ right_of_pipe = subprocess.run(['huggingface-cli', 'login'], stdin=left_of_pipe.
 
 
 # Load the dataset
-datasets.logging.disable_progress_bar()
-
 @st.cache(allow_output_mutation=True)
 def load_data(dataset_name):
     dataset = datasets.load_dataset(dataset_name, use_auth_token=True)
