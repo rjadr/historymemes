@@ -1,0 +1,4 @@
+autogluon
+datasets
+pandas
+streamlit
